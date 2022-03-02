@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_ui/data/data.dart';
-import 'package:food_delivery_ui/models/order.dart';
 import 'package:food_delivery_ui/models/restaurant.dart';
 import 'package:food_delivery_ui/screens/cart_screen.dart';
 import 'package:food_delivery_ui/screens/restaurant_screen.dart';
@@ -25,7 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+            margin:
+                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(15.0),
@@ -50,14 +50,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(12.0),
+                    margin: const EdgeInsets.all(12.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
                           restaurant.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -67,14 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         SizedBox(height: 4.0),
                         Text(
                           restaurant.address,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                           ),
                           overflow: TextOverflow.ellipsis,
                         ),
                         SizedBox(height: 4.0),
-                        Text(
+                        const Text(
                           '0.2 miles away',
                           style: TextStyle(
                             fontSize: 16.0,
@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
           FlatButton(
             child: Text(
               'Cart (${currentUser.cart.length})',
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20.0,
               ),
@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 hintText: 'Search Food or Restaurants',
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   Icons.search,
                   size: 30.0,
                 ),
@@ -159,7 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text(
                   'Nearby Restaurants',

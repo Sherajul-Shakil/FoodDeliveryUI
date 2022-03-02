@@ -45,7 +45,7 @@ class _CartScreenState extends State<CartScreen> {
                       children: <Widget>[
                         Text(
                           order.food.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -54,7 +54,7 @@ class _CartScreenState extends State<CartScreen> {
                         SizedBox(height: 10.0),
                         Text(
                           order.restaurant.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -91,7 +91,7 @@ class _CartScreenState extends State<CartScreen> {
                               SizedBox(width: 20.0),
                               Text(
                                 order.quantity.toString(),
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -126,7 +126,7 @@ class _CartScreenState extends State<CartScreen> {
             margin: EdgeInsets.all(10.0),
             child: Text(
               '\$${order.quantity * order.food.price}',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w600,
               ),
@@ -161,7 +161,7 @@ class _CartScreenState extends State<CartScreen> {
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       'Estimated Delivery Time:',
                       style: TextStyle(
@@ -182,7 +182,7 @@ class _CartScreenState extends State<CartScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       'Total Cost:',
                       style: TextStyle(
                         fontSize: 20.0,
@@ -212,11 +212,11 @@ class _CartScreenState extends State<CartScreen> {
         },
       ),
       bottomSheet: Container(
-        height: 100.0,
+        height: 50.0,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColor,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Colors.black26,
               offset: Offset(0, -1),
@@ -226,7 +226,7 @@ class _CartScreenState extends State<CartScreen> {
         ),
         child: Center(
           child: FlatButton(
-            child: Text(
+            child: const Text(
               'CHECKOUT',
               style: TextStyle(
                 color: Colors.white,

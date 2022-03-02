@@ -39,7 +39,7 @@ class RecentOrders extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           order.food.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -48,7 +48,7 @@ class RecentOrders extends StatelessWidget {
                         SizedBox(height: 4.0),
                         Text(
                           order.restaurant.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -57,7 +57,7 @@ class RecentOrders extends StatelessWidget {
                         SizedBox(height: 4.0),
                         Text(
                           order.date,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -94,7 +94,7 @@ class RecentOrders extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Padding(
+        const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: Text(
             'Recent Orders',
